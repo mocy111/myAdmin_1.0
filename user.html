@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       <!--font awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" integrity="sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+        <link rel="stylesheet" href="main.css">
+
+        <title>my admin</title>
+    </head>
+
+    <body >
+
+
+        <section>
+            <div>
+                <nav class="blue ">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="index.html" class="brand-logo white-text">MYadmin</a>
+                            <a href="index.html" data-target="nav" class="sidenav-trigger">
+                                <i class="material-icons">menu</i></a>
+                            </a>
+                            <ul class="right hide-on-med-and-down">
+                                
+
+                                <li>
+                                    <a href="index.html" class="white-text">Dashboards</a>
+                                </li>
+                                <li>
+                                    <a href="post.html" class="white-text">posts</a>
+                                </li>
+                                <li>
+                                    <a href="cat.html" class="white-text">Categories</a>
+                                </li>
+                                <li>
+                                    <a href="com.html" class="white-text">Comments</a>
+                                </li>
+                                <li>
+                                    <a href="user.html" class="white-text">Users</a>
+                                </li>
+                                <li>  <div class="">
+                                    <button data-target="nav" class=" btn blue sidenav-trigger hide-on-large"><i class="fas fa-bars"></i></button>
+                                </div></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <ul class="sidenav  " id="nav">
+                    <li class="panel blue">
+                        <div class="user-view">
+                    <img src="1.png" class="responsive-img " alt="" style="width: 100px;" >
+                    
+                </div>
+                <a href="#name"><span class="white-text name">Julius Novachrono</span></a>
+                <a href="#email"><span class="white-text email">julius@gmail.com</span></a>
+                
+                </li>
+                <li><a href="#!"><i class="fab fa-microsoft"></i>   Dashboards</a></li>
+                <li>
+                    <a href="post.html">Posts</a>
+                </li>
+                <li>
+                    <a href="cat.html">Categories</a>
+                </li>
+                <li>
+                    <a href="com.html">Comments</a>
+                </li>
+                <li>
+                    <a href="user.html">Users</a>
+                </li>
+                <li><div class="divider"></div></li>
+                <li><a class="subheader">Account control</a></li>
+                <li><a class="waves-effect" href="#!">Logout</a></li>
+                
+            </ul>
+        </section>
+
+        <section style="background-color: rgb(247, 242, 242); padding-top: 2rem; padding-bottom: 2rem;">
+            <div class="container">
+                <div class="row">
+                    <div class="col l12">
+                    <div class="card" >
+                        <div class="card-content">
+                        <h3 class="card-title">Users</h3>
+                        <div class="row "  >
+                        <strong class="col l3 s12">Name</strong>
+                        <strong class="col l3 s12">Email</strong>
+                        <strong class="col l3 s12" >Registrated</strong>
+                        <strong class="col l3 s12"></strong>
+                        </div>
+                        <div class="row panel grey lighten-3 " style=" padding-top: 1rem; padding-bottom: 1rem;" >
+                            <p class="col l3 s12"><img src="1.png" alt="" style="border-radius: 50% 50%; width: 20%;margin-right: 1rem;"></p>
+                            <p class="col l3 s12">Julius@gmail.com</p>
+                            <p class="col l3 s12">Oct 1,2019</p>
+                            <a class="waves-effect blue btn">DETAILS</a>
+
+                            </div>
+                            <div class="row"  >
+                                <p class="col l3 s12"><img src="2.jpg" alt="" style="border-radius: 50% 50%; width: 30%;margin-right: 1rem;"></p>
+                                <p class="col l3 s12">Asta@gmail.com</p>
+                                <p class="col l3 s12">Oct 2,2019</p>
+                                <a class="waves-effect blue btn">DETAILS</a>
+
+                                </div>
+                                <div class="row grey lighten-3"  style=" padding-top: 1rem; padding-bottom: 1rem;">
+                                    <p class="col l3 s12"><img src="3.jpg" alt="" style="border-radius: 50% 50%; width: 20%;margin-right: 1rem;"></p>
+                                    <p class="col l3 s12">Yami@gmail.com</p>
+                                    <p class="col l3 s12">Oct 3,2019</p>
+                                    <a class="waves-effect blue btn">DETAILS</a>
+  
+                                    </div>
+                                    <div class="row "  style=" padding-top: 1rem; padding-bottom: 1rem;">
+                                        <p class="col l3 s12"><img src="4.png" alt="" style="border-radius: 50% 50%; width: 20%;margin-right: 1rem;" ></p>
+                                        <p class="col l3 s12">Yuno@gmail.com</p>
+                                        <p class="col l3 s12">Oct 5,2019</p>
+                                        <a class="waves-effect blue btn">DETAILS</a>
+      
+                                        </div>
+                                     
+                                        <ul class="pagination">
+                                            <li class="disabled"><a href="#!"><i class="fas fa-arrow-left"></i></a></li>
+                                            <li class="active blue"><a href="#!">1</a></li>
+                                            <li class="waves-effect"><a href="#!">2</a></li>
+                                            <li class="waves-effect"><a href="#!">3</a></li>
+                                            <li class="waves-effect"><a href="#!">4</a></li>
+                                            <li class="waves-effect"><a href="#!">5</a></li>
+                                            <li class="waves-effect"><a href="#!"><i class="fas fa-arrow-right"></i></a></li>
+                                          </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <style>
+                footer
+                {
+                    bottom: 0;
+                    position: fixed;
+                    width: 100%;
+                }
+            </style>
+
+
+
+
+
+        <footer class="blue" style="padding-top: 1rem; padding-bottom: 1rem;">
+            <p class="white-text" style="text-align: center;">MyAdmin Codeloccol Copyright © 2020 - Moctar Yonli </p>
+        </footer> <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">add</i>
+            </a>
+        <ul>
+            <li><a class="btn-floating blue waves-effect waves-light btn modal-trigger" href="#modal1"><i class="fas fa-pen"></i></a></li>
+            <li><a class="btn-floating blue waves-effect waves-light btn modal-trigger" href="#modal2"><i class="fas fa-folder"></i></a></li>
+            <li><a class="btn-floating blue waves-effect waves-light btn modal-trigger" href="#modal3"><i class="fas fa-user-friends"></i></a></li>
+        </ul>
+        </div>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                      <h4>Add Post</h4>
+                        <input type="text" style="width: 99%;" class="rounded border mx-auto" placeholder="Title">
+                        <p class="mt-2 pl-4">Category</p>
+                        <input type="text" style="width: 99%;" class="rounded border mx-auto" placeholder="Select Option">
+                    <div id="editor">
+                        <p>This is some sample content.</p>
+                    </div>
+                    <a href="" class="btn blue right" style="margin-bottom: 1rem; margin-top: 3rem;">SUBMIT</a>
+            </div>
+          </div>
+
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+                <h4>Add Category</h4>
+                <input type="text" style="width: 99%;" class="rounded border mx-auto" placeholder="Title">
+                <a href="" class="btn blue right" style="margin-bottom: 1rem; margin-top: 3rem;">SUBMIT</a>
+            </div>
+          </div>
+
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+                <h4>Add User</h4>
+                <input type="text" style="width: 99%; margin-top: 2rem;" class="rounded border mx-auto" placeholder="Name">
+                <input type="text" style="width: 99%; margin-top: 2rem;" class="rounded border mx-auto" placeholder="Email">
+                <input type="text" style="width: 99%; margin-top: 2rem;" class="rounded border mx-auto" placeholder="Password">
+                <input type="text" style="width: 99%; margin-top: 2rem;" class="rounded border mx-auto" placeholder="Confirm Password">
+                <a href="" class="btn blue right" style="margin-bottom: 1rem; margin-top: 3rem;">SUBMIT</a>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/17.0.0/classic/ckeditor.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ), {
+            // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+        } )
+        .then( editor => {
+            window.editor = editor;
+        } )
+        .catch( err => {
+            console.error( err.stack );
+        } );
+</script>
+
+
+
+
+        <script>
+ $(document).ready(function(){
+      $('.modal').modal();
+    });
+</script>
+    <script>
+    $(document).ready(function(){
+        $('.fixed-action-btn').floatingActionButton();
+        });
+    </script>
+    <script>
+          $(document).ready(function(){
+          $('.sidenav').sidenav();
+          });
+        </script>
+        <script>
+
+          $(".dropdown-trigger").dropdown();
+    
+  
+  
+        </script>
+        
+        <script>
+          const sideNav = document.querySelector('.sidenav');
+          M.Sidenav.init(sideNav, {});
+          $(document).ready(function(){
+          $('.tabs').tabs();
+          });
+          
+      </script>
+      
+      <script type="text/javascript">
+    var chr2=document.getElementById("myChart2").getContext("2d");
+    var myChart2=new Chart(chr2,{
+			type:'line',
+			data:{
+				labels:['1','2','3','4','5' ,'6','7','8','9','10',"11" ],
+				datasets:[{
+					label:'Dally Visitors',
+					data:[450,410,520,260,450,500,314,490,405,300,430],
+					backgroundColor:'rgba(0,0,0,0)',
+					borderColor:'black',
+					borderWidth:1.5,
+				}]
+			},
+
+            
+        });
+    
+    
+    
+    
+    
+    </script>
+      
+      
+      </body>
+    </html>
